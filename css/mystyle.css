@@ -1,0 +1,78 @@
+.ueberschrift {
+  font-weight: bold; 
+  margin-bottom:10px;
+}
+
+.navbar-brand-centered
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.item-not-loaded {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+            transition: opacity 0.5s;
+}
+
+.item-loaded {
+    opacity: 1;
+}
+
+.td-padding {
+    padding-right: 0.5cm;
+}
+
+th {
+   text-align:center;
+}
+
+.cell_big_caption {
+  height: 1.5cm; 
+}
+
+.cell_small_caption {
+  height: 1cm; 
+}
+
+/* For Debugging media queries use:
+ * <span class="visible-xs">SIZE XS</span>
+ * <span class="visible-sm">SIZE SM</span>
+ * <span class="visible-md">SIZE MD</span>
+ * <span class="visible-lg">SIZE LG</span>
+ * */
+@media (max-width: 767px) {
+  .cell_big_caption {
+    height: auto;
+  }
+  .cell_small_caption {
+    height: auto;
+  }
+  .intro_page div:not(:last-child) {
+    margin-bottom: 1cm;
+  }
+  #last_column {
+    margin-top: 2cm;
+  }
+}
+
+@media (min-width:768px) {
+  .cell_big_caption {
+    height: 3cm;
+  }
+  .cell_small_caption {
+    height: 1.5cm;
+  }
+}
+
+@media (min-width:992px) {
+  .cell_big_caption {
+    height: 1.5cm;
+  }
+  .cell_small_caption {
+    height: 1cm;
+  }
+}
